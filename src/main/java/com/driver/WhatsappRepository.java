@@ -27,7 +27,7 @@ public class WhatsappRepository {
         this.messageId = 0;
     }
 
-    public boolean newUser(String mobile) {
+    public boolean isNewUser(String mobile) {
         if(userData.containsKey(mobile)) return false;
         return true;
     }
